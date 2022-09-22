@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem" controller="OmniChannelHelperController">
+    <lightning:omniToolkitAPI aura:id="omniToolkitId" />  
+    <aura:handler event="lightning:omniChannelWorkAccepted" action="{!c.onWorkAccepted}"/>
+    <aura:handler event="lightning:omniChannelWorkClosed" action="{!c.onWorkClosed}"/>
+</aura:component>

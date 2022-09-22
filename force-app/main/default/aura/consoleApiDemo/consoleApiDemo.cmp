@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="ConsoleApiController">
+    <lightning:omniToolkitAPI aura:id="omniToolkitDemo" />
+    <lightning:workspaceAPI aura:id="workspace" />
+    <lightning:utilityBarAPI aura:id="utilitybar" />
+    
+    <lightning:button label="Accept AgentWork" onclick="{! c.acceptWork }" />
+    <lightning:button label="Get Status" onclick="{! c.getStatus }" />
+    <lightning:button label="Get Status Channels" onclick="{! c.getStatusChannels }" />
+    <lightning:button label="Get Agent Workload" onclick="{! c.getAgentWorkload }" />
+    <lightning:button label="Raise Flag" onclick="{! c.raiseFlag }" /> 
+    <lightning:button label="Lower Flag" onclick="{! c.lowerFlag }" />
+    <lightning:button label="Get All Utility Info" onclick="{! c.getAllUtilityInfo }" />
+</aura:component>

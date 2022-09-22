@@ -1,0 +1,18 @@
+<aura:component  implements="lightning:backgroundUtilityItem" access="global" >
+    <lightning:workspaceAPI aura:id="workspace" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="status" type="String" />
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="recordId" type="String" />
+     
+    <lightning:empApi aura:id="empApi" />
+    
+    <lightning:card title="Platform Events in Aura Component Salesforce" iconName="standard:account">
+        <div class="slds-p-horizontal_small">
+            <p>Status : {!v.status}</p>
+            <p>Message : {!v.message}</p>
+            <p>Record Id : {!v.recordId}</p>
+        </div>
+    </lightning:card>
+</aura:component>

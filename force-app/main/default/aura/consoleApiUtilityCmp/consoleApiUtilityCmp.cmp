@@ -1,0 +1,8 @@
+<aura:component implements="lightning:backgroundUtilityItem" access="global" controller="ConsoleApiController">
+    <lightning:omniToolkitAPI aura:id="omniToolkitDemo" />
+    <lightning:workspaceAPI aura:id="workspace" />
+    <lightning:utilityBarAPI aura:id="utilitybar" />
+    
+    <aura:handler event="lightning:tabCreated" action="{! c.onTabCreated }"/>
+    <aura:handler event="lightning:omniChannelWorkAssigned" action="{! c.onWorkAssigned }"/>
+</aura:component>

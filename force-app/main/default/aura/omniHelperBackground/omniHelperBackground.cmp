@@ -1,0 +1,5 @@
+<aura:component implements="lightning:backgroundUtilityItem" access="global" >
+    <lightning:omniToolkitAPI aura:id="omniToolkitId2" />  
+    <aura:handler event="lightning:omniChannelWorkAccepted" action="{!c.onWorkAccepted}"/>
+    <aura:handler event="lightning:omniChannelWorkClosed" action="{!c.onWorkClosed}"/>
+</aura:component>
